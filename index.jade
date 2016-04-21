@@ -21,8 +21,8 @@ html(lang='en')
     //if lt IE 9
       script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
       script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
-  body
-    .navbar.navbar-fixed-top(role='navigation')
+ body
+    .navbar.navbar-fixed-top.navbar-default(role='navigation')
       .container
         .navbar-header
           button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
@@ -89,27 +89,108 @@ html(lang='en')
       .container
         .row
           .col-md-8
-            h1 Clean Tech Template
-            h2.highlight-primary Plan steps for world domination:    
-            ul.list-feature.special-margin
+            h1 Clean Techie Template
+            h2.highlight-primary Aliquam erat volutpat nullam quis nibs
+            ul.list-feature.margin-top-30
               li
                 i.fa.fa-bar-chart
-                | sit on the laptop
-              li 
+                |  Fusce vitae lorem
+              li
                 i.fa.fa-desktop
-                | purr while eating
-              li 
+                |  Vitae purus commodo
+              li
                 i.fa.fa-database
-                | and lie on your belly
-              li 
+                |  Dapibus pellentesque posuere
+              li
                 i.fa.fa-lightbulb-o
-                | and purr when you are asleep.
+                |  Eros sit amet ultrices
           .col-md-4
-            img(src='img/imac.png')
-    //
-      Bootstrap core JavaScript
+            img#main(src='img/imac.png')
+    section.section-primary.content-icons
+      .container
+        .row
+          .col-md-3
+            h4
+              i.fa.fa-cogs.fa-white.fa-lg
+              | 						Easily Customizable
+          .col-md-3
+            h4
+              i.fa.fa-html5.fa-white.fa-lg
+              | 						HTML5 Markup
+          .col-md-3
+            h4
+              i.fa.fa-indent.fa-white.fa-lg
+              | 						Responsive
+          .col-md-3
+            h4
+              i.fa.fa-send.fa-white.fa-lg
+              | 						Lightweight
+    section.content-devices.scroll300.padding-bottom-40
+      .container
+        .row
+          .col-md-12
+            h1 Lorem ipsum dolor sit amet, consectetur adipiscing
+            img#laptop(src='img/laptop.png')
+            img#desktop(src='img/desktop.png')
+            img#mobile(src='img/mobile.png')
+    footer#footer-main
+      .container
+        .row
+          .col-md-4
+            h4 Our Products
+            ul
+              li.app-appstore
+                a(href='#') App Store
+              li.app-play
+                a(href='#') Google Play Store
+              li.app-droid
+                a(href='#') Android Market
+              li.app-windows
+                a(href='#') Windows
+              li.app-chrome
+                a(href='#') Google Chrome Store
+          .col-md-4
+            h4 Our Company
+            ul
+              li
+                a(href='#') What We Do
+              li
+                a(href='#') Why Choose Us?
+              li
+                a(href='#') Advertise With Us
+              li
+                a(href='#') Careers
+              li
+                a(href='#') Web Development
+          .col-md-4
+            h4 Our Support
+            ul
+              li
+                a(href='#') Support Home
+              li
+                a(href='#') Our Community
+              li
+                a(href='#') Send A Ticket
+              li
+                a(href='#') Contact Us
+  
+     // Bootstrap core JavaScript
       ==================================================
+
     // Placed at the end of the document so the pages load faster
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
     script(src='js/bootstrap.min.js' type='text/javascript')
-
+    script.
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          var y = $(this).scrollTop();
+          if(y >= 200){
+            $("#laptop").addClass('animate')
+            $("#mobile").addClass('animate')
+          } 
+          if (y < 200){
+            $("#laptop").removeClass('animate')
+            $("#mobile").removeClass('animate')
+          }
+        });
+      });
