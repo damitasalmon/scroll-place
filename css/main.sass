@@ -3,7 +3,8 @@
 @import 'Font Awesome/font-awesome'
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,100,200,300,500,600)
 
-$high-contrast: $high-contrast
+$high-contrast: #fff
+$color-1: #CAD2C5
 $color-2: #84A98C
 $color-3: #52796F
 $color-4: #354F52
@@ -147,8 +148,8 @@ section
     &#desktop
       width: 375px
     &#mobile
-      z-index: 100
       width: 190px
+      z-index: 100
 
 #footer-main
   background: $color-3
@@ -168,7 +169,7 @@ section
   +animation-duration(1s)
   
 img.animate
-  &#desktop
+  &#main
     +transform(translate(-40em, 0))
   &#laptop
     +transform(translate(12em, 0))

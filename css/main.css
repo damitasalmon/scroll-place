@@ -2225,14 +2225,14 @@ a {
   padding-bottom: 5px; }
   .navbar-nav > li > a {
     padding-bottom: 0;
-    color: #666; }
+    color: #84A98C; }
 
 .nav > li > a:hover,
 .nav > li > a:focus {
   background: none; }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #ddd; }
+  background-color: #2F3E46; }
 
 .navbar-default .navbar-nav > .active > a {
   background: none;
@@ -2255,7 +2255,7 @@ section {
   margin-right: -500px; }
 
 .section-default {
-  background: #f7f8f7; }
+  background: #CAD2C5; }
 
 .section-primary {
   background: #52796F;
@@ -2299,8 +2299,8 @@ section {
     .content-devices img#desktop {
       width: 375px; }
     .content-devices img#mobile {
-      z-index: 100;
-      width: 190px; }
+      width: 190px;
+      z-index: 100; }
 
 #footer-main {
   background: #52796F;
@@ -2325,7 +2325,7 @@ section {
   -moz-animation-duration: 1s;
   animation-duration: 1s; }
 
-img.animate#desktop {
+img.animate#main {
   -webkit-transform: translate(-40em, 0);
   -moz-transform: translate(-40em, 0);
   -ms-transform: translate(-40em, 0);
