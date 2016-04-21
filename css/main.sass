@@ -1,4 +1,5 @@
 @import 'bootstrap.min.css'
+@import 'bourbon/bourbon'
 @import 'Font Awesome/font-awesome'
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,100,200,300,500,600)
 
@@ -100,5 +101,49 @@ section
   color: $color-3
   font-size: 1.5em
 
+.content-icons
+  display: block
+  text-align: center
+  h4
+    color: #fff
+  i 
+    display: block
+    margin-bottom: 15px
+
+  
+.fa-white
+  color: #fff
+
+.fa-lg
+  font-size: 4em
 
 /******SECTONS + FOOTER****/ 
+.content-devices
+  text-align: center
+  img
+    position: relative
+    #laptop
+      width: 290px
+      margin-left: -95px
+      z-index: 100
+    #desktop
+      width: 375px
+    #mobile
+      z-index: 100
+      width: 190px
+
+#footer-main
+  background: $color-3
+  color: #fff
+  border-top: #333 4px solid
+  padding: 40px 0
+  h4, a
+    color: #fff
+  li
+    list-style: square
+    line-height: 2em
+    
+/****Animations******/
+.animate
+  +transition(1s ease-in-out)
+  +animation-fill-mode(forwards)

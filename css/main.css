@@ -2260,4 +2260,52 @@ section {
   color: #52796F;
   font-size: 1.5em; }
 
+.content-icons {
+  display: block;
+  text-align: center; }
+  .content-icons h4 {
+    color: #fff; }
+  .content-icons i {
+    display: block;
+    margin-bottom: 15px; }
+
+.fa-white {
+  color: #fff; }
+
+.fa-lg {
+  font-size: 4em; }
+
 /******SECTONS + FOOTER****/
+.content-devices {
+  text-align: center; }
+  .content-devices img {
+    position: relative; }
+    .content-devices img #laptop {
+      width: 290px;
+      margin-left: -95px;
+      z-index: 100; }
+    .content-devices img #desktop {
+      width: 375px; }
+    .content-devices img #mobile {
+      z-index: 100;
+      width: 190px; }
+
+#footer-main {
+  background: #52796F;
+  color: #fff;
+  border-top: #333 4px solid;
+  padding: 40px 0; }
+  #footer-main h4, #footer-main a {
+    color: #fff; }
+  #footer-main li {
+    list-style: square;
+    line-height: 2em; }
+
+/****Animations******/
+.animate {
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
